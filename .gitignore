@@ -19,7 +19,6 @@ inputs/gfs/
 inputs/ClimatologyOceanData/route/
 inputs/ClimatologyOceanData/hourly_reference/*.grib
 inputs/OceanData_split_fixed/
-outputs/
 OceanData/*.grib
 OceanData/*.grib2
 OceanData/*.jld2
