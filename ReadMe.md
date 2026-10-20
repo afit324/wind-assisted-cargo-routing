@@ -1,19 +1,11 @@
-# Get Wind Data
-
-For the `getWindData()` function you must create a `.env` file and create two
-variables `CDSAPI_KEY` and `CDSAPI_URL` and set them to your corresponding
-credentials, e.g. the env file should have: `CDSAPI_KEY = your_key` `CDSAPI_URL = your_url`
-
 # Folders
 
-For Stochastic Routing - 
-StochasticWork/ 
-
-Overview
-This folder contains all Python code used to produce the experiments, results, and figures in for the stochastic work on this project. The codebase implements a rolling-horizon Model Predictive Control (MPC) framework for routing wind-assisted cargo vessels across the North Atlantic, comparing eight routing policies under stochastic NWP forecast uncertainty.
+### Stochastic Routing (`StochasticWork/`)
+This folder contains all Python code used to produce the experiments, results, and figures for the stochastic work on this project. The codebase implements a rolling-horizon Model Predictive Control (MPC) framework for routing wind-assisted cargo vessels across the North Atlantic, comparing eight routing policies under stochastic NWP forecast uncertainty.
 
 The experiments progress from fully synthetic settings (no external data) through to real PredictWind GRIB forecasts evaluated against ERA5 reanalysis weather.
 
+```text
 StochasticWork/
 │
 ├── policy.py                   # Synthetic MPC framework (no GRIB) — core policy logic
@@ -48,6 +40,7 @@ StochasticWork/
 ├── forecast_policy_routes.pkl    # Saved forecast-policy routes (used by ActualWeatherSimulation.py)
 ├── actual_weather_results.csv    # Output: policy costs under realised ERA5 weather
 └── actual_weather_arc_details.csv # Output: arc-level cost breakdown under ERA5
+```
 
 For dijstra/deterministic routing - 
 
@@ -170,14 +163,14 @@ If a specific `.grib` file is missing from your archive when the default solver 
 
 ---
 
-## 3. Land Shapefile (GSHHG)
+## 4. Land Shapefile (GSHHG)
 The grid builder requires the intermediate-resolution GSHHG shapefile.
 1. Download from NOAA: https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html
 2. Unzip and place `GSHHS_i_L1.shp` (and its sibling files `.shx`, `.dbf`, `.prj`) into the `OceanData/` folder.
 
 ---
 
-## 4. GFS Forecast Data
+## 5. GFS Forecast Data
 You need local GFS forecast cycles for the Committed and Rolling methods.
 1. Open a terminal (Git Bash) in the project root.
 2. Run the download script for your target start date (e.g., `20221003`):
@@ -190,7 +183,7 @@ You need local GFS forecast cycles for the Committed and Rolling methods.
 
 ---
 
-## 5. How to Configure the Pipeline
+## 6. How to Configure the Pipeline
 All configurations are handled in the `route_experiments.jl` file. Open it in your editor and look at the top and bottom of the file.
 
 **A. Changing Start/End Locations**
