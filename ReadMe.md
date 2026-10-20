@@ -6,7 +6,9 @@ credentials, e.g. the env file should have: `CDSAPI_KEY = your_key` `CDSAPI_URL 
 
 # Folders
 
-StochasticWork/ -  (has own readme)
+For Stochastic Routing - 
+StochasticWork/ 
+
 Overview
 This folder contains all Python code used to produce the experiments, results, and figures in for the stochastic work on this project. The codebase implements a rolling-horizon Model Predictive Control (MPC) framework for routing wind-assisted cargo vessels across the North Atlantic, comparing eight routing policies under stochastic NWP forecast uncertainty.
 
@@ -116,6 +118,128 @@ greedy_route.jl - Optional greedy routing comparison. Included lazily when RUN.g
 convert_to_GPX.py - Converts a route CSV to GPX for OpenCPN.
 
 
+# Wind-Assisted Cargo Vessel Routing — Handover & Setup
+
+Time- and energy-aware weather routing for cargo vessels. This project finds the fastest route between two points while respecting a hard energy budget, minimum boat speeds, land masks, and discrete power levels. 
+
+The repository contains **source code only**. You must perform the following setup steps to populate the required data before running the pipeline.
+
+---
+
+## 1. Julia Environment
+Instantiate the environment to install all required packages:
+```bash
+julia --project -e 'using Pkg; Pkg.instantiate()'
+```
+*Note for headless environments (e.g., servers without a display):* You must set `export GKSwstype=100` before running, otherwise the plotting libraries will crash.
+
+---
+
+## 2. API Credentials & Downloading ERA5 Wind Data
+The code uses the Copernicus Climate Data Store (CDS) to download ERA5 data. 
+1. Create a `.env` file in the root directory:
+```text
+CDSAPI_KEY = your_personal_key_here
+CDSAPI_URL = your_api_url_here
+```
+
+
+## 3. Downloading Wind Data (ERA5)
+
+The code supports two different ways of downloading ERA5 data, depending on your needs. Both methods automatically calculate the exact bounding box (`route_area`) needed to cover the route corridor plus padding.
+
+**A. Bulk Download (For Climatology & Backtesting)**
+To run the historical climatology blend or backtests, you need decades of data. Use the `batched_downloader.jl` script.
+*   Open `wind_download.jl`.
+*   Scroll to the bottom where `bulk_download_climatology_batched(...)` is called.
+*   Set your `start_location`, `end_location`, `padding`, and `step` (must match your routing grid).
+*   Set `start_year` and `end_year`.
+*   Set 'out_dir' to "inputs/ClimatologyOceanData/route/"
+*   Define `times_per_day` (e.g., `["00:00", "06:00", "12:00", "18:00"]` for 6-hourly).
+*   Run it: `julia --project wind_download.jl`
+*   **Output:** Saves `YYYY-MM.grib` files directly into `inputs/ClimatologyOceanData/route/`. It batches one request per month to speed up CDS processing.
+
+**B. Hourly Reference (For Resolution Testing)**
+If you need to test the difference between 6-hourly and hourly data, run the `download_hourly_reference(...)` function inside `wind_download.jl`. 
+*   Set 'out_dir' to "inputs/ClimatologyOceanData/hourly_reference/"
+*   Set 'year' to year wanted
+*   **Output:** Saves `YYYY-MM-hourly.grib` files into `inputs/ClimatologyOceanData/hourly_reference/`.
+
+**C. Automatic Per-Timestamp Downloads**
+If a specific `.grib` file is missing from your archive when the default solver requests it, the code will automatically call `getWindData()` to fetch just that timestamp and save it into `OceanData/`.
+
+---
+
+## 3. Land Shapefile (GSHHG)
+The grid builder requires the intermediate-resolution GSHHG shapefile.
+1. Download from NOAA: https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html
+2. Unzip and place `GSHHS_i_L1.shp` (and its sibling files `.shx`, `.dbf`, `.prj`) into the `OceanData/` folder.
+
+---
+
+## 4. GFS Forecast Data
+You need local GFS forecast cycles for the Committed and Rolling methods.
+1. Open a terminal (Git Bash) in the project root.
+2. Run the download script for your target start date (e.g., `20221003`):
+```bash
+./download_gfs_rolling_series.sh 20221003 20 00 336 inputs/gfs/gfs_top5_20221003 12
+```
+*   This downloads 20 consecutive daily cycles of 00Z GFS out to 336 hours.
+*   Data is saved to `inputs/gfs/gfs_top5_<tag>_<yyyymmdd>_00z/`.
+*   *If a window's GFS folder is missing, the pipeline will skip that date.*
+
+---
+
+## 5. How to Configure the Pipeline
+All configurations are handled in the `route_experiments.jl` file. Open it in your editor and look at the top and bottom of the file.
+
+**A. Changing Start/End Locations**
+Around line 45, change the coordinates (order is `lon, lat`):
+```julia
+const START_LOCATION = (-94.0, 28.5)  # e.g., Houston
+const END_LOCATION   = (-5.5, 49.5)   # e.g., English Channel
+```
+
+**B. Changing Target Dates (Forecasts)**
+Look for `RUN_TAGS`:
+```julia
+const RUN_TAGS = ["20221003", "20221215", "20231106", "20240616", "20240822"]
+```
+*You must download the GFS folders for any tags you put here.*
+
+**C. Changing Data Folders**
+If you move your data, update the paths in `route_experiments.jl`:
+```julia
+const GFS_DIR              = _fwd(joinpath(INPUT_DIR, "gfs"))
+const HISTORICAL_DIR       = joinpath(CLIMATOLOGY_DATA_DIR, "route")
+const HOURLY_REFERENCE_DIR = joinpath(CLIMATOLOGY_DATA_DIR, "hourly_reference")
+```
+
+**D. Changing from 6-Hourly to Hourly Wind Data**
+The solver supports different wind sources. By default, the pipeline uses the 6-hourly climatology archive.
+*   **To use 6-hourly (Default):** `with_archive()` calls `set_climatology_archive_source!()`, which reads from `HISTORICAL_DIR` and snaps times to 6-hour intervals (21600 seconds).
+*   **To use Hourly:** If you have hourly data in `HOURLY_REFERENCE_DIR`, you must modify `reset_sources!()` or `with_archive()` in `route_experiments.jl` to call:
+    ```julia
+    set_hourly_reference_source!(dir = HOURLY_REFERENCE_DIR)
+    ```
+    This tells the solver to snap times to 1-hour intervals (3600 seconds) and read from the hourly folder.
+
+**E. How to Run the Pipeline**
+Go to the bottom of `route_experiments.jl` to the `const RUN` block.
+```julia
+const RUN = (
+    pipeline            = true,
+    only_tag            = "20221003",  # Set to nothing to run all RUN_TAGS
+    run_c400            = true,        # Constant 400kW
+    run_variable        = false,       # Variable power
+    ...
+)
+```
+
+---
+
+### Resume System
+The pipeline saves its progress. If it crashes or you stop it, **just restart it**. It checks for the existence of `outputs/tables/legs_<mode>_<method>_<tag>.csv` and skips completed work. To force a re-run, simply delete the corresponding `legs_*.csv` file.
 
 # Conventions
 
