@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wind Arrows Colored by Speed</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    .info.legend {
+      background: white;
+      padding: 10px;
+      line-height: 1.4;
+      font: 14px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+    .info.legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.8;
+      background: #ccc;
+    }
+    .arrow-icon {
+  background: none;
+    }
+  </style>
+</head>
+<body>
+    <body>
+        <h2 style="text-align:center; font-family: Helvetica, Arial, sans-serif; margin: 15px 0;">
+          Grid-Based Discretisation
+        </h2>
+      
+        <div id="map" style="width: 100%; height: calc(100vh - 80px);"></div>
+  <!-- <div id="map" style="width: 100%; height: 100vh;"></div> -->
+
+  <script>
+    // To change the title change the test in the <h2> tag above.
+    // Define the start and end points 
+    const startLong = -94.89558; // Houston, TX
+    const startLat = 29.104177; // Houston, TX
+    const endLong = -6.6; 
+    const endLat =  51.0;
+    // The file with the grid points
+    const gridFile = '../t.geojson';
+    ///
+
+      function getColor(long, lat) {
+        if (long === startLong && lat === startLat) {
+          return '#00ff00' 
+        } // check for the end point with some tolerance
+        else if (Math.abs(long - endLong) < 0.1 && Math.abs(lat - endLat) < 0.1) {
+          return '#FF0000'; // red for the end point
+        } else {
+          return '#000000'; 
+        }
+    }
+
+    function getSize(long, lat) {
+        // make start and end points larger
+        if (long === startLong && lat === startLat) {
+            return 1.5; // larger size for start point
+        } else if (Math.abs(long - endLong) < 0.1 && Math.abs(lat - endLat) < 0.1) {
+            return 1.5; // larger size for end point
+        } else {
+            return 0.5; // smaller size for other points
+        }
+    }
+
+    // Initialize the map
+    const map = L.map('map').setView([29.76, -95.37], 6);
+
+    // Base map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // OpenSeaMap overlay
+    L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
+      attribution: '© OpenSeaMap contributors',
+      opacity: 0.7
+    }).addTo(map);
+
+    // Load GeoJSON as points ans colour the first and last points a different color
+    fetch(gridFile)
+      .then(response => response.json())
+      .then(data => { 
+        data.features.forEach(feature => {
+          const [lon, lat] = feature.geometry.coordinates;
+          const start = feature.properties.start_index;
+        const end = feature.properties.end_index;
+          L.circleMarker([lat, lon], {
+            radius: getSize(lon, lat),
+            color: getColor(lon, lat),
+            fillOpacity: 1
+          }).addTo(map);
+    
+        });
+      });
+
+      // add a legend to explain the colors
+        const legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function (map) {
+          const div = L.DomUtil.create('div', 'info legend');
+            div.innerHTML += '<i style="background: #00ff00"></i> Start Point<br>';
+            div.innerHTML += '<i style="background: #FF0000"></i> End Point<br>';
+            div.innerHTML += '<i style="background: #000000"></i> Other Points<br>';
+          return div;
+        };
+        legend.addTo(map);
+
+
+
+  </script>
+</body>
+</html>

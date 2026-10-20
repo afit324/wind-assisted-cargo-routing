@@ -1,0 +1,22 @@
+{
+    "benchmark": 110,
+    "measure": "u_abs",
+    "lateral_penalty": 0.1,
+    "latitudes": [
+        30,
+        35,
+        40,
+        45,
+        50
+    ],
+    "longitudes": [
+        -79,
+        -74,
+        -69,
+        -64,
+        -59,
+        -54,
+        -49,
+        -44
+    ]
+}

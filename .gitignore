@@ -1,0 +1,57 @@
+# Credentials
+.env
+
+# Julia
+.julia/
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+# Binaries (cadet_generic)
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+
+# Data folders (Huge!)
+inputs/gfs/
+inputs/ClimatologyOceanData/route/
+inputs/ClimatologyOceanData/hourly_reference/*.grib
+inputs/OceanData_split_fixed/
+outputs/
+OceanData/*.grib
+OceanData/*.grib2
+OceanData/*.jld2
+OceanData/*.nc
+inputs/OceanData/*.grib
+inputs/OceanData/*.grib2
+inputs/OceanData/*.jld2
+inputs/OceanData/*.nc
+
+# Generated files
+test_*/
+sanity_*/
+*.jld2
+*.grib
+*.grib2
+*.gpx
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Large/unused shapefiles
+# GSHHS full-resolution is 153 MB (over GitHub's 100 MB limit) -- use _i_ instead
+OceanData/GSHHS_f_*
+# Natural Earth ocean polygons -- ocean_mask_v2.jl docstring says never use these
+OceanData/ne_10m_*
+EOF

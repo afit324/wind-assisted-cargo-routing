@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wind-Assisted Routing Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+    .info.legend {
+      background: white;
+      padding: 10px;
+      font: 14px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+    .info.legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.8;
+    }
+    .custom-label {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+    }
+  </style>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+    // Start coordinates
+    const startLat = 29.104177;
+    const startLong = -94.89558;
+    const endLat = 51.0;
+    const endLong = -6.6;
+
+    // File for grid points
+    const gridFile = '../Outputs/GridRisePol1000kWLargest.geojson'; // Grid points
+
+    // specify paths for routes
+    const paths = {
+    path1: {
+        file: '../Outputs/Refinment_1000kW_Largest_Grid.geojson',
+        color: '#0000FF',
+        legendLabel: 'Coarse gird route (t=11.9 Days)',
+        label: 'Coarse Gird Route',
+        labelOffset: 4.5
+    },
+    path2: {
+        file: '../Outputs/Refinment_1000kW_2ndLargest_Grid.geojson',
+        color: '#008000',
+        legendLabel: 'Route 2x finer than course route (t=11.7 Days)',
+        label: '2x Finer',
+        labelOffset: 3.5
+    },
+    path3: {
+        file: '../Outputs/Refinment_1000kW_3rdLargest_Grid.geojson',
+        color: '#FF69B4',
+        legendLabel: 'Route 3x finer than course route (t=11.7 Days)',
+        label: '3x Finer',
+        labelOffset: -2
+    },
+    greatCircle: {
+        file: '../Outputs/great_circle_path.geojson',
+        color: '#FFA500',
+        legendLabel: 'Great Circle Path',
+        label: 'Great Circle',
+        labelOffset: -3.5
+    }
+    };
+
+
+    function getColor(long, lat) {
+        if (long === startLong && lat === startLat) {
+          return '#00ff00' 
+        } // check for the end point with some tolerance
+        else if (Math.abs(long - endLong) < 0.1 && Math.abs(lat - endLat) < 0.1) {
+          return '#FF0000'; // red for the end point
+        } else {
+          return '#000000'; 
+        }
+    }
+
+    function getSize(long, lat) {
+        // make start and end points larger
+        if (long === startLong && lat === startLat) {
+            return 1.5; // larger size for start point
+        } else if (Math.abs(long - endLong) < 0.1 && Math.abs(lat - endLat) < 0.1) {
+            return 1.5; // larger size for end point
+        } else {
+            return 0.5; // smaller size for other points
+        }
+    }
+
+    // Initialize map
+    const map = L.map('map').setView([35, -40], 3.5);
+
+    // Base map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // OpenSeaMap overlay
+    L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
+      attribution: '© OpenSeaMap contributors',
+      opacity: 0.7
+    }).addTo(map);
+
+    // Add start label
+    L.marker([startLat - 1, startLong], {
+      icon: L.divIcon({
+        className: 'custom-label',
+        // make the start label bright green
+        html: '<span style="color:black;">Start</span>',
+        iconSize: [60, 20],
+        iconAnchor: [30, 0]
+      })
+    }).addTo(map);
+
+    // Add end label
+    L.marker([endLat - 1, endLong], {
+      icon: L.divIcon({
+        className: 'custom-label',
+        html: '<span style="color:black;">End</span>',
+        iconSize: [60, 20],
+        iconAnchor: [30, 0]
+      })
+    }).addTo(map);
+
+        // Load GeoJSON as points ans colour the first and last points a different color
+        fetch(gridFile)
+      .then(response => response.json())
+      .then(data => { 
+        data.features.forEach(feature => {
+          const [lon, lat] = feature.geometry.coordinates;
+          const start = feature.properties.start_index;
+        const end = feature.properties.end_index;
+          L.circleMarker([lat, lon], {
+            radius: getSize(lon, lat),
+            color: getColor(lon, lat),
+            fillOpacity: 1
+          }).addTo(map);
+    
+        });
+      });
+
+function addLabeledRoute(filePath, color, labelText, offsetLat = -0.5) {
+  fetch(filePath)
+    .then(res => res.json())
+    .then(data => {
+      const coords = data.features[0].geometry.coordinates;
+      const mid = Math.floor(coords.length / 2);
+      const [midLon, midLat] = coords[mid];
+
+      L.geoJSON(data, {
+        style: {
+          color: color,
+          weight: 2,
+          opacity: 0.8
+        }
+      }).addTo(map);
+
+      L.marker([midLat + offsetLat, midLon], {
+        icon: L.divIcon({
+          className: 'custom-label',
+          html: `<span style="color:${color};">${labelText}</span>`,
+          iconSize: [120, 20],
+          iconAnchor: [60, 0]
+        })
+      }).addTo(map);
+    });
+}
+
+
+    Object.entries(paths).forEach(([key, path]) => {
+    addLabeledRoute(path.file, path.color, path.label, path.labelOffset);
+    });
+
+
+    // Add legend
+    const legend = L.control({ position: 'bottomright' });
+    legend.onAdd = function (map) {
+      const div = L.DomUtil.create('div', 'info legend');
+      div.innerHTML += '<i style="background:#00ff00"></i> Start Point<br>';
+      div.innerHTML += '<i style="background:#FF0000"></i> End Point<br>';
+        Object.entries(paths).forEach(([key, path]) => {
+            div.innerHTML += `<i style="background:${path.color}"></i> ${path.legendLabel}<br>`;
+        });
+      return div;
+    };
+    legend.addTo(map);
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "benchmark": 145,
+    "measure": "wind_speed",
+    "lateral_penalty": 0.25,
+    "latitudes": [
+        30,
+        35,
+        40,
+        45,
+        50
+    ],
+    "longitudes": [
+        -80,
+        -75,
+        -70,
+        -65,
+        -60,
+        -55,
+        -50,
+        -45
+    ]
+}

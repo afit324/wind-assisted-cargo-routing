@@ -1,0 +1,81 @@
+======================================================================
+FORECAST VERIFICATION SUMMARY
+Atlantic Routing Corridor, August 2026
+======================================================================
+
+NOTE: the following models do not have full 8-init-date coverage at all lead times: PWG, GFS, PWE, ECMWF_WRCTPaG. Their metrics below are computed on fewer/different cases than the fully-covered models and are NOT directly comparable to them. See coverage_report.csv for the exact gaps before trusting any ranking that includes these models.
+
+NOTE: ENSEMBLE_MEAN is a derived forecast, not a raw source -- at each (init_date, lead_h, lat, lon) it averages the u10/v10 of whichever individual models have a record there (only when >= 3 of 4 are present), then re-derives wind speed/direction from that averaged vector.
+
+1. MOST ACCURATE SOURCE (wind speed RMSE, all leads):
+   ECMWF_WRCTPaG       : RMSE = 2.157 m/s ← BEST  [INCOMPLETE COVERAGE]
+   ENSEMBLE_MEAN       : RMSE = 2.213 m/s
+   GFS                 : RMSE = 2.303 m/s  [INCOMPLETE COVERAGE]
+   PWG                 : RMSE = 2.345 m/s  [INCOMPLETE COVERAGE]
+   PWE                 : RMSE = 2.499 m/s  [INCOMPLETE COVERAGE]
+
+2. SKILL DROP-OFF BY LEAD TIME (wind speed RMSE):
+   PWG                 :  6h=2.089  12h=1.938  24h=2.130  48h=2.265  72h=2.381  96h=2.432  120h=2.459  144h=2.652  168h=2.760*
+   GFS                 :  6h=2.074  12h=2.175  24h=2.029  48h=2.205  72h=2.235  96h=2.284  120h=2.466  144h=2.500  168h=2.757*
+   PWE                 :  6h=2.247  12h=1.896  24h=2.200  48h=2.348  72h=2.705  96h=2.826  120h=2.723  144h=2.739  168h=2.805*
+   ECMWF_WRCTPaG       :  6h=2.032  12h=1.975  24h=1.900  48h=2.017  72h=2.071  96h=2.247  120h=2.344  144h=2.275  168h=2.549*
+   ENSEMBLE_MEAN       :  6h=1.987  12h=1.885  24h=1.951  48h=2.080  72h=2.242  96h=2.251  120h=2.394  144h=2.459  168h=2.665
+
+3. SYSTEMATIC BIAS (mean wind speed error):
+   PWG                 : mean bias = -0.228 m/s (under-forecast)
+   GFS                 : mean bias = +0.056 m/s (over-forecast)
+   PWE                 : mean bias = -0.160 m/s (under-forecast)
+   ECMWF_WRCTPaG       : mean bias = -0.064 m/s (under-forecast)
+   ENSEMBLE_MEAN       : mean bias = -0.633 m/s (under-forecast)
+
+4. VOLATILE vs STEADY CONDITIONS (24h lead, wind speed MAE):
+   PWG                 : volatile=2.399  steady=1.569  (ratio=1.53x)
+   GFS                 : volatile=2.259  steady=1.476  (ratio=1.53x)
+   PWE                 : volatile=2.296  steady=1.613  (ratio=1.42x)
+   ECMWF_WRCTPaG       : volatile=2.178  steady=1.389  (ratio=1.57x)
+   ENSEMBLE_MEAN       : volatile=2.058  steady=1.414  (ratio=1.46x)
+
+5. WHERE ALL SOURCES PERFORM POORLY:
+   High error (top 25%) concentrated at lead times: 96h, 120h, 168h
+   Most challenging region: Eastern (lon ≥ −55°)
+
+6. DECISION-RELEVANT CORRIDOR CHECK:
+   Lead 24h corridor agreement with ERA5:
+     PWG                 : 27.5% match
+     GFS                 : 32.5% match
+     PWE                 : 20.0% match
+     ECMWF_WRCTPaG       : 30.0% match
+     ENSEMBLE_MEAN       : 25.0% match
+   Lead 48h corridor agreement with ERA5:
+     PWG                 : 15.0% match
+     GFS                 : 27.5% match
+     PWE                 : 12.5% match
+     ECMWF_WRCTPaG       : 42.5% match
+     ENSEMBLE_MEAN       : 20.0% match
+   Lead 72h corridor agreement with ERA5:
+     PWG                 : 17.5% match
+     GFS                 : 32.5% match
+     PWE                 : 17.5% match
+     ECMWF_WRCTPaG       : 27.5% match
+     ENSEMBLE_MEAN       : 27.5% match
+   Lead 120h corridor agreement with ERA5:
+     PWG                 : 15.0% match
+     GFS                 : 17.5% match
+     PWE                 : 12.5% match
+     ECMWF_WRCTPaG       : 15.0% match
+     ENSEMBLE_MEAN       : 12.5% match
+   Lead 168h corridor agreement with ERA5:
+     PWG                 : 11.4% match
+     GFS                 : 20.0% match
+     PWE                 : 22.9% match
+     ECMWF_WRCTPaG       : 11.4% match
+     ENSEMBLE_MEAN       : 8.6% match
+
+7. MODEL RANKING SUMMARY (by wind speed RMSE):
+   Lead 24h: ECMWF_WRCTPaG(1.900), ENSEMBLE_MEAN(1.951), GFS(2.029), PWG(2.130), PWE(2.200)
+   Lead 48h: ECMWF_WRCTPaG(2.017), ENSEMBLE_MEAN(2.080), GFS(2.205), PWG(2.265), PWE(2.348)
+   Lead 72h: ECMWF_WRCTPaG(2.071), GFS(2.235), ENSEMBLE_MEAN(2.242), PWG(2.381), PWE(2.705)
+   Lead 120h: ECMWF_WRCTPaG(2.344), ENSEMBLE_MEAN(2.394), PWG(2.459), GFS(2.466), PWE(2.723)
+   Lead 168h: ECMWF_WRCTPaG(2.549), ENSEMBLE_MEAN(2.665), GFS(2.757), PWG(2.760), PWE(2.805)
+
+======================================================================

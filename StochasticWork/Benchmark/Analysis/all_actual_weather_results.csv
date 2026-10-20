@@ -1,0 +1,514 @@
+policy,forecast_cost,actual_cost,route,benchmark,cost_function
+adaptive,0.4714735252467187,0.4403839966241766,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_001,unknown
+hindsight,0.46472141608647,0.4358201958597499,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_001,unknown
+voting,0.4714735252467187,0.4403839966241766,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_001,unknown
+greedy,0.4714735252467187,0.4403839966241766,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_001,unknown
+averaged_arc,0.4714735252467187,0.4403839966241766,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_001,unknown
+minimax,0.4714735252467187,0.4403839966241766,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_001,unknown
+optimistic,0.5809102096386451,0.5224191544305461,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_001,unknown
+weighted,0.4714735252467187,0.4403839966241766,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_001,unknown
+random,0.7322493374432766,0.4874223119508599,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_001,unknown
+adaptive,0.4714735252467187,0.4655719118488916,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_002,unknown
+hindsight,0.46472141608647,0.4646292874438383,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_002,unknown
+voting,0.4714735252467187,0.4655719118488916,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_002,unknown
+greedy,0.4714735252467187,0.4655719118488916,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_002,unknown
+averaged_arc,0.4714735252467187,0.4655719118488916,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_002,unknown
+minimax,0.4714735252467187,0.4655719118488916,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_002,unknown
+optimistic,0.5809102096386451,0.5691143533890995,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_002,unknown
+weighted,0.4714735252467187,0.4655719118488916,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_002,unknown
+random,0.7322493374432766,0.567657141549426,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_002,unknown
+adaptive,0.4714735252467187,0.5199149698766847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_003,unknown
+hindsight,0.46472141608647,0.5103278422365931,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_003,unknown
+voting,0.4714735252467187,0.5199149698766847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_003,unknown
+greedy,0.4714735252467187,0.5199149698766847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_003,unknown
+averaged_arc,0.4714735252467187,0.5199149698766847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_003,unknown
+minimax,0.4714735252467187,0.5199149698766847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_003,unknown
+optimistic,0.5809102096386451,0.6762839242540054,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_003,unknown
+weighted,0.4714735252467187,0.5199149698766847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_003,unknown
+random,0.7322493374432766,0.5514543855254648,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_003,unknown
+adaptive,0.4714735252467187,0.6976063712655789,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_004,unknown
+hindsight,0.46472141608647,0.6869083415020237,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_004,unknown
+voting,0.4714735252467187,0.6976063712655789,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_004,unknown
+greedy,0.4714735252467187,0.6976063712655789,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_004,unknown
+averaged_arc,0.4714735252467187,0.6976063712655789,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_004,unknown
+minimax,0.4714735252467187,0.6976063712655789,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_004,unknown
+optimistic,0.5809102096386451,0.6604766440620118,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_004,unknown
+weighted,0.4714735252467187,0.6976063712655789,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_004,unknown
+random,0.7322493374432766,0.7136201570654142,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_004,unknown
+adaptive,0.4714735252467187,0.835415766643254,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_005,unknown
+hindsight,0.46472141608647,0.8117543886688097,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_005,unknown
+voting,0.4714735252467187,0.835415766643254,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_005,unknown
+greedy,0.4714735252467187,0.835415766643254,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_005,unknown
+averaged_arc,0.4714735252467187,0.835415766643254,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_005,unknown
+minimax,0.4714735252467187,0.835415766643254,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_005,unknown
+optimistic,0.5809102096386451,0.6928734232526995,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_005,unknown
+weighted,0.4714735252467187,0.835415766643254,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_005,unknown
+random,0.7322493374432766,0.6719016861015095,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_005,unknown
+adaptive,0.4714735252467187,0.4449258945868466,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_006,unknown
+hindsight,0.46472141608647,0.4341746857072163,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_006,unknown
+voting,0.4714735252467187,0.4449258945868466,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_006,unknown
+greedy,0.4714735252467187,0.4449258945868466,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_006,unknown
+averaged_arc,0.4714735252467187,0.4449258945868466,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_006,unknown
+minimax,0.4714735252467187,0.4449258945868466,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_006,unknown
+optimistic,0.5809102096386451,0.5166620493256193,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_006,unknown
+weighted,0.4714735252467187,0.4449258945868466,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_006,unknown
+random,0.7322493374432766,0.5734957640285304,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_006,unknown
+adaptive,0.4714735252467187,0.5159602386875847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_007,unknown
+hindsight,0.46472141608647,0.5129561931450544,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_007,unknown
+voting,0.4714735252467187,0.5159602386875847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_007,unknown
+greedy,0.4714735252467187,0.5159602386875847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_007,unknown
+averaged_arc,0.4714735252467187,0.5159602386875847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_007,unknown
+minimax,0.4714735252467187,0.5159602386875847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_007,unknown
+optimistic,0.5809102096386451,0.5770875963430134,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_007,unknown
+weighted,0.4714735252467187,0.5159602386875847,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_007,unknown
+random,0.7322493374432766,0.6689703351398999,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_007,unknown
+adaptive,0.4714735252467187,0.5464823840105165,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_008,unknown
+hindsight,0.46472141608647,0.5379645213948103,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_008,unknown
+voting,0.4714735252467187,0.5464823840105165,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_008,unknown
+greedy,0.4714735252467187,0.5464823840105165,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_008,unknown
+averaged_arc,0.4714735252467187,0.5464823840105165,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_008,unknown
+minimax,0.4714735252467187,0.5464823840105165,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_008,unknown
+optimistic,0.5809102096386451,0.804571820282685,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_008,unknown
+weighted,0.4714735252467187,0.5464823840105165,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_008,unknown
+random,0.7322493374432766,0.7361169094257675,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_008,unknown
+adaptive,0.4714735252467187,0.8205036075210899,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_009,unknown
+hindsight,0.46472141608647,0.8021716327118615,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_009,unknown
+voting,0.4714735252467187,0.8205036075210899,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_009,unknown
+greedy,0.4714735252467187,0.8205036075210899,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_009,unknown
+averaged_arc,0.4714735252467187,0.8205036075210899,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_009,unknown
+minimax,0.4714735252467187,0.8205036075210899,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_009,unknown
+optimistic,0.5809102096386451,0.7644121644306769,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_009,unknown
+weighted,0.4714735252467187,0.8205036075210899,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_009,unknown
+random,0.7322493374432766,0.7079113132666466,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_009,unknown
+adaptive,0.4714735252467187,0.794786119543983,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_010,unknown
+hindsight,0.46472141608647,0.7724199168820647,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_010,unknown
+voting,0.4714735252467187,0.794786119543983,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_010,unknown
+greedy,0.4714735252467187,0.794786119543983,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_010,unknown
+averaged_arc,0.4714735252467187,0.794786119543983,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_010,unknown
+minimax,0.4714735252467187,0.794786119543983,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_010,unknown
+optimistic,0.5809102096386451,0.68260318709477,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_010,unknown
+weighted,0.4714735252467187,0.794786119543983,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_010,unknown
+random,0.7322493374432766,0.6670310874782017,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_010,unknown
+adaptive,0.4714735252467187,0.4606560459923592,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_011,unknown
+hindsight,0.46472141608647,0.4651959060478741,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_011,unknown
+voting,0.4714735252467187,0.4606560459923592,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_011,unknown
+greedy,0.4714735252467187,0.4606560459923592,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_011,unknown
+averaged_arc,0.4714735252467187,0.4606560459923592,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_011,unknown
+minimax,0.4714735252467187,0.4606560459923592,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_011,unknown
+optimistic,0.5809102096386451,0.5349037515409611,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_011,unknown
+weighted,0.4714735252467187,0.4606560459923592,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_011,unknown
+random,0.7322493374432766,0.5618928717256133,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_011,unknown
+adaptive,0.4714735252467187,0.5947220417226009,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_012,unknown
+hindsight,0.46472141608647,0.5889683149132046,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_012,unknown
+voting,0.4714735252467187,0.5947220417226009,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_012,unknown
+greedy,0.4714735252467187,0.5947220417226009,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_012,unknown
+averaged_arc,0.4714735252467187,0.5947220417226009,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_012,unknown
+minimax,0.4714735252467187,0.5947220417226009,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_012,unknown
+optimistic,0.5809102096386451,0.6061969659240883,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_012,unknown
+weighted,0.4714735252467187,0.5947220417226009,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_012,unknown
+random,0.7322493374432766,0.6656260720369216,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_012,unknown
+adaptive,0.4714735252467187,0.5810551914102623,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_013,unknown
+hindsight,0.46472141608647,0.5676269534452436,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_013,unknown
+voting,0.4714735252467187,0.5810551914102623,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_013,unknown
+greedy,0.4714735252467187,0.5810551914102623,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_013,unknown
+averaged_arc,0.4714735252467187,0.5810551914102623,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_013,unknown
+minimax,0.4714735252467187,0.5810551914102623,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_013,unknown
+optimistic,0.5809102096386451,0.7262317854414715,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_013,unknown
+weighted,0.4714735252467187,0.5810551914102623,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_013,unknown
+random,0.7322493374432766,0.930154655421813,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_013,unknown
+adaptive,0.4714735252467187,0.7764608693787427,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_014,unknown
+hindsight,0.46472141608647,0.7493970776997836,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_014,unknown
+voting,0.4714735252467187,0.7764608693787427,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_014,unknown
+greedy,0.4714735252467187,0.7764608693787427,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_014,unknown
+averaged_arc,0.4714735252467187,0.7764608693787427,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_014,unknown
+minimax,0.4714735252467187,0.7764608693787427,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_014,unknown
+optimistic,0.5809102096386451,0.7525741393081146,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_014,unknown
+weighted,0.4714735252467187,0.7764608693787427,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_014,unknown
+random,0.7322493374432766,0.8835372733265191,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_014,unknown
+adaptive,0.4714735252467187,0.7651228486652197,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_015,unknown
+hindsight,0.46472141608647,0.7410239857918395,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_015,unknown
+voting,0.4714735252467187,0.7651228486652197,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_015,unknown
+greedy,0.4714735252467187,0.7651228486652197,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_015,unknown
+averaged_arc,0.4714735252467187,0.7651228486652197,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_015,unknown
+minimax,0.4714735252467187,0.7651228486652197,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_015,unknown
+optimistic,0.5809102096386451,0.6990044225002469,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_015,unknown
+weighted,0.4714735252467187,0.7651228486652197,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_015,unknown
+random,0.7322493374432766,0.8148043857017079,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_015,unknown
+adaptive,0.4714735252467187,0.4917486923582578,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_016,unknown
+hindsight,0.46472141608647,0.4920784826597995,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_016,unknown
+voting,0.4714735252467187,0.4917486923582578,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_016,unknown
+greedy,0.4714735252467187,0.4917486923582578,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_016,unknown
+averaged_arc,0.4714735252467187,0.4917486923582578,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_016,unknown
+minimax,0.4714735252467187,0.4917486923582578,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_016,unknown
+optimistic,0.5809102096386451,0.5589893103122808,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_016,unknown
+weighted,0.4714735252467187,0.4917486923582578,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_016,unknown
+random,0.7322493374432766,0.7358144463578775,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_016,unknown
+adaptive,0.4714735252467187,0.6012172852468576,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_017,unknown
+hindsight,0.46472141608647,0.5973082815239031,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_017,unknown
+voting,0.4714735252467187,0.6012172852468576,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_017,unknown
+greedy,0.4714735252467187,0.6012172852468576,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_017,unknown
+averaged_arc,0.4714735252467187,0.6012172852468576,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_017,unknown
+minimax,0.4714735252467187,0.6012172852468576,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_017,unknown
+optimistic,0.5809102096386451,0.6367150193214083,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_017,unknown
+weighted,0.4714735252467187,0.6012172852468576,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_017,unknown
+random,0.7322493374432766,0.750913773359726,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_017,unknown
+adaptive,0.4714735252467187,0.6260417733395357,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_018,unknown
+hindsight,0.46472141608647,0.6050378468117169,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_018,unknown
+voting,0.4714735252467187,0.6260417733395357,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_018,unknown
+greedy,0.4714735252467187,0.6260417733395357,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_018,unknown
+averaged_arc,0.4714735252467187,0.6260417733395357,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_018,unknown
+minimax,0.4714735252467187,0.6260417733395357,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_018,unknown
+optimistic,0.5809102096386451,0.7548521318499712,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_018,unknown
+weighted,0.4714735252467187,0.6260417733395357,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_018,unknown
+random,0.7322493374432766,0.915857461858354,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_018,unknown
+adaptive,0.4714735252467187,0.7466548404546277,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_019,unknown
+hindsight,0.46472141608647,0.6983942797650562,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_019,unknown
+voting,0.4714735252467187,0.7466548404546277,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_019,unknown
+greedy,0.4714735252467187,0.7466548404546277,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_019,unknown
+averaged_arc,0.4714735252467187,0.7466548404546277,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_019,unknown
+minimax,0.4714735252467187,0.7466548404546277,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_019,unknown
+optimistic,0.5809102096386451,0.764304606767184,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_019,unknown
+weighted,0.4714735252467187,0.7466548404546277,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_019,unknown
+random,0.7322493374432766,0.7862608937112107,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_019,unknown
+adaptive,0.4714735252467187,0.7431943908863204,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_020,unknown
+hindsight,0.46472141608647,0.7162734960227968,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_020,unknown
+voting,0.4714735252467187,0.7431943908863204,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_020,unknown
+greedy,0.4714735252467187,0.7431943908863204,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_020,unknown
+averaged_arc,0.4714735252467187,0.7431943908863204,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_020,unknown
+minimax,0.4714735252467187,0.7431943908863204,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_020,unknown
+optimistic,0.5809102096386451,0.6973588476058121,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_020,unknown
+weighted,0.4714735252467187,0.7431943908863204,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_020,unknown
+random,0.7322493374432766,0.9984026535759022,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_020,unknown
+adaptive,0.4714735252467187,0.7266138589917648,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_021,unknown
+hindsight,0.46472141608647,0.7129603571743977,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_021,unknown
+voting,0.4714735252467187,0.7266138589917648,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_021,unknown
+greedy,0.4714735252467187,0.7266138589917648,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_021,unknown
+averaged_arc,0.4714735252467187,0.7266138589917648,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_021,unknown
+minimax,0.4714735252467187,0.7266138589917648,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_021,unknown
+optimistic,0.5809102096386451,0.7665916018603598,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_021,unknown
+weighted,0.4714735252467187,0.7266138589917648,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_021,unknown
+random,0.7322493374432766,1.1551825339317054,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_021,unknown
+adaptive,0.4714735252467187,0.7519279553415972,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_022,unknown
+hindsight,0.46472141608647,0.7437987287679332,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_022,unknown
+voting,0.4714735252467187,0.7519279553415972,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_022,unknown
+greedy,0.4714735252467187,0.7519279553415972,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_022,unknown
+averaged_arc,0.4714735252467187,0.7519279553415972,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_022,unknown
+minimax,0.4714735252467187,0.7519279553415972,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_022,unknown
+optimistic,0.5809102096386451,0.7013403496850409,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_022,unknown
+weighted,0.4714735252467187,0.7519279553415972,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_022,unknown
+random,0.7322493374432766,0.8539480589392602,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_022,unknown
+adaptive,0.4714735252467187,0.9322788619630532,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_023,unknown
+hindsight,0.46472141608647,0.916561288399886,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_023,unknown
+voting,0.4714735252467187,0.9322788619630532,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_023,unknown
+greedy,0.4714735252467187,0.9322788619630532,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_023,unknown
+averaged_arc,0.4714735252467187,0.9322788619630532,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_023,unknown
+minimax,0.4714735252467187,0.9322788619630532,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_023,unknown
+optimistic,0.5809102096386451,0.9243130875514056,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_023,unknown
+weighted,0.4714735252467187,0.9322788619630532,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_023,unknown
+random,0.7322493374432766,1.011169997900908,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_023,unknown
+adaptive,0.4714735252467187,0.9408032242111422,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_024,unknown
+hindsight,0.46472141608647,0.9320271059931664,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_024,unknown
+voting,0.4714735252467187,0.9408032242111422,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_024,unknown
+greedy,0.4714735252467187,0.9408032242111422,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_024,unknown
+averaged_arc,0.4714735252467187,0.9408032242111422,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_024,unknown
+minimax,0.4714735252467187,0.9408032242111422,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_024,unknown
+optimistic,0.5809102096386451,0.9273909999551336,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_024,unknown
+weighted,0.4714735252467187,0.9408032242111422,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_024,unknown
+random,0.7322493374432766,0.7911802451928368,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_024,unknown
+adaptive,0.4714735252467187,1.1903045828162335,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_025,unknown
+hindsight,0.46472141608647,1.0335535941894562,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_025,unknown
+voting,0.4714735252467187,1.1903045828162335,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_025,unknown
+greedy,0.4714735252467187,1.1903045828162335,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_025,unknown
+averaged_arc,0.4714735252467187,1.1903045828162335,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_025,unknown
+minimax,0.4714735252467187,1.1903045828162335,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_025,unknown
+optimistic,0.5809102096386451,1.1634563427891835,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_025,unknown
+weighted,0.4714735252467187,1.1903045828162335,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_025,unknown
+random,0.7322493374432766,1.042951342337714,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_025,unknown
+adaptive,0.4714735252467187,1.5901249691702102,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_026,unknown
+hindsight,0.46472141608647,1.5796176013336498,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_026,unknown
+voting,0.4714735252467187,1.5901249691702102,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_026,unknown
+greedy,0.4714735252467187,1.5901249691702102,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_026,unknown
+averaged_arc,0.4714735252467187,1.5901249691702102,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_026,unknown
+minimax,0.4714735252467187,1.5901249691702102,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_026,unknown
+optimistic,0.5809102096386451,1.4401697095364328,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_026,unknown
+weighted,0.4714735252467187,1.5901249691702102,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_026,unknown
+random,0.7322493374432766,1.3850180055715573,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_026,unknown
+adaptive,0.4714735252467187,3.5424031217473324,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_027,unknown
+hindsight,0.46472141608647,3.57086496175965,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_027,unknown
+voting,0.4714735252467187,3.5424031217473324,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_027,unknown
+greedy,0.4714735252467187,3.5424031217473324,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_027,unknown
+averaged_arc,0.4714735252467187,3.5424031217473324,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_027,unknown
+minimax,0.4714735252467187,3.5424031217473324,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_027,unknown
+optimistic,0.5809102096386451,2.9336097387973505,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_027,unknown
+weighted,0.4714735252467187,3.5424031217473324,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_027,unknown
+random,0.7322493374432766,1.6865955224728104,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_027,unknown
+adaptive,0.4714735252467187,3.276666684947041,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_028,unknown
+hindsight,0.46472141608647,3.2458103886601264,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_028,unknown
+voting,0.4714735252467187,3.276666684947041,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_028,unknown
+greedy,0.4714735252467187,3.276666684947041,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_028,unknown
+averaged_arc,0.4714735252467187,3.276666684947041,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_028,unknown
+minimax,0.4714735252467187,3.276666684947041,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_028,unknown
+optimistic,0.5809102096386451,4.6716326772397325,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_028,unknown
+weighted,0.4714735252467187,3.276666684947041,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_028,unknown
+random,0.7322493374432766,1.818118409443877,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_028,unknown
+adaptive,0.4714735252467187,4.3960959650579055,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_029,unknown
+hindsight,0.46472141608647,4.280979661417945,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_029,unknown
+voting,0.4714735252467187,4.3960959650579055,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_029,unknown
+greedy,0.4714735252467187,4.3960959650579055,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_029,unknown
+averaged_arc,0.4714735252467187,4.3960959650579055,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_029,unknown
+minimax,0.4714735252467187,4.3960959650579055,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_029,unknown
+optimistic,0.5809102096386451,3.3034501941960714,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_029,unknown
+weighted,0.4714735252467187,4.3960959650579055,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_029,unknown
+random,0.7322493374432766,2.060168137407824,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_029,unknown
+adaptive,0.4714735252467187,4.164847104282979,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_030,unknown
+hindsight,0.46472141608647,4.3238034620269366,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_030,unknown
+voting,0.4714735252467187,4.164847104282979,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_030,unknown
+greedy,0.4714735252467187,4.164847104282979,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_030,unknown
+averaged_arc,0.4714735252467187,4.164847104282979,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_030,unknown
+minimax,0.4714735252467187,4.164847104282979,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_030,unknown
+optimistic,0.5809102096386451,3.091009859835421,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_030,unknown
+weighted,0.4714735252467187,4.164847104282979,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_030,unknown
+random,0.7322493374432766,2.306783844342121,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_030,unknown
+adaptive,0.4714735252467187,1.4944941647284526,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_031,unknown
+hindsight,0.46472141608647,1.4774135112630506,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_031,unknown
+voting,0.4714735252467187,1.4944941647284526,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_031,unknown
+greedy,0.4714735252467187,1.4944941647284526,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_031,unknown
+averaged_arc,0.4714735252467187,1.4944941647284526,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_031,unknown
+minimax,0.4714735252467187,1.4944941647284526,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_031,unknown
+optimistic,0.5809102096386451,1.338832983218034,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_031,unknown
+weighted,0.4714735252467187,1.4944941647284526,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_031,unknown
+random,0.7322493374432766,1.3643542049646489,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_031,unknown
+adaptive,0.4714735252467187,2.1293107495942345,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_032,unknown
+hindsight,0.46472141608647,2.052426403133931,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_032,unknown
+voting,0.4714735252467187,2.1293107495942345,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_032,unknown
+greedy,0.4714735252467187,2.1293107495942345,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_032,unknown
+averaged_arc,0.4714735252467187,2.1293107495942345,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_032,unknown
+minimax,0.4714735252467187,2.1293107495942345,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_032,unknown
+optimistic,0.5809102096386451,1.969103399281349,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_032,unknown
+weighted,0.4714735252467187,2.1293107495942345,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_032,unknown
+random,0.7322493374432766,1.8860241023776707,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_032,unknown
+adaptive,0.4714735252467187,2.496811281313965,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_033,unknown
+hindsight,0.46472141608647,2.2687987240139025,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_033,unknown
+voting,0.4714735252467187,2.496811281313965,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_033,unknown
+greedy,0.4714735252467187,2.496811281313965,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_033,unknown
+averaged_arc,0.4714735252467187,2.496811281313965,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_033,unknown
+minimax,0.4714735252467187,2.496811281313965,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_033,unknown
+optimistic,0.5809102096386451,2.8721857191367883,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_033,unknown
+weighted,0.4714735252467187,2.496811281313965,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_033,unknown
+random,0.7322493374432766,2.1231998578361324,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_033,unknown
+adaptive,0.4714735252467187,3.677158477492007,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_034,unknown
+hindsight,0.46472141608647,3.14184740470443,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_034,unknown
+voting,0.4714735252467187,3.677158477492007,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_034,unknown
+greedy,0.4714735252467187,3.677158477492007,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_034,unknown
+averaged_arc,0.4714735252467187,3.677158477492007,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_034,unknown
+minimax,0.4714735252467187,3.677158477492007,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_034,unknown
+optimistic,0.5809102096386451,3.446477709313674,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_034,unknown
+weighted,0.4714735252467187,3.677158477492007,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_034,unknown
+random,0.7322493374432766,2.278790623222162,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_034,unknown
+adaptive,0.4714735252467187,2.2663933549406003,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_035,unknown
+hindsight,0.46472141608647,3.106171784506983,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_035,unknown
+voting,0.4714735252467187,2.2663933549406003,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_035,unknown
+greedy,0.4714735252467187,2.2663933549406003,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_035,unknown
+averaged_arc,0.4714735252467187,2.2663933549406003,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_035,unknown
+minimax,0.4714735252467187,2.2663933549406003,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_035,unknown
+optimistic,0.5809102096386451,1.8328903881338656,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_035,unknown
+weighted,0.4714735252467187,2.2663933549406003,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_035,unknown
+random,0.7322493374432766,1.4528937202005443,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_035,unknown
+adaptive,0.4714735252467187,1.3984901014336115,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_036,unknown
+hindsight,0.46472141608647,1.3890642409681728,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_036,unknown
+voting,0.4714735252467187,1.3984901014336115,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_036,unknown
+greedy,0.4714735252467187,1.3984901014336115,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_036,unknown
+averaged_arc,0.4714735252467187,1.3984901014336115,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_036,unknown
+minimax,0.4714735252467187,1.3984901014336115,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_036,unknown
+optimistic,0.5809102096386451,1.36231584125311,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_036,unknown
+weighted,0.4714735252467187,1.3984901014336115,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_036,unknown
+random,0.7322493374432766,1.4451423534487733,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_036,unknown
+adaptive,0.4714735252467187,1.5851827989427452,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_037,unknown
+hindsight,0.46472141608647,1.5860204435276082,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_037,unknown
+voting,0.4714735252467187,1.5851827989427452,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_037,unknown
+greedy,0.4714735252467187,1.5851827989427452,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_037,unknown
+averaged_arc,0.4714735252467187,1.5851827989427452,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_037,unknown
+minimax,0.4714735252467187,1.5851827989427452,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_037,unknown
+optimistic,0.5809102096386451,1.6687713370405295,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_037,unknown
+weighted,0.4714735252467187,1.5851827989427452,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_037,unknown
+random,0.7322493374432766,1.5112507349703057,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_037,unknown
+adaptive,0.4714735252467187,2.1057125931831755,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_038,unknown
+hindsight,0.46472141608647,2.0530878992225388,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_038,unknown
+voting,0.4714735252467187,2.1057125931831755,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_038,unknown
+greedy,0.4714735252467187,2.1057125931831755,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_038,unknown
+averaged_arc,0.4714735252467187,2.1057125931831755,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_038,unknown
+minimax,0.4714735252467187,2.1057125931831755,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_038,unknown
+optimistic,0.5809102096386451,2.3045831539222754,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_038,unknown
+weighted,0.4714735252467187,2.1057125931831755,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_038,unknown
+random,0.7322493374432766,2.0984082184232,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_038,unknown
+adaptive,0.4714735252467187,1.860035756344557,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_039,unknown
+hindsight,0.46472141608647,1.9923315589998407,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_039,unknown
+voting,0.4714735252467187,1.860035756344557,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_039,unknown
+greedy,0.4714735252467187,1.860035756344557,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_039,unknown
+averaged_arc,0.4714735252467187,1.860035756344557,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_039,unknown
+minimax,0.4714735252467187,1.860035756344557,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_039,unknown
+optimistic,0.5809102096386451,1.7919604427971183,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_039,unknown
+weighted,0.4714735252467187,1.860035756344557,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_039,unknown
+random,0.7322493374432766,1.7505081091969688,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_039,unknown
+adaptive,0.4714735252467187,1.3797897341861458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_040,unknown
+hindsight,0.46472141608647,1.634696378982893,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_040,unknown
+voting,0.4714735252467187,1.3797897341861458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_040,unknown
+greedy,0.4714735252467187,1.3797897341861458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_040,unknown
+averaged_arc,0.4714735252467187,1.3797897341861458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_040,unknown
+minimax,0.4714735252467187,1.3797897341861458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_040,unknown
+optimistic,0.5809102096386451,1.2573910640528865,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_040,unknown
+weighted,0.4714735252467187,1.3797897341861458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_040,unknown
+random,0.7322493374432766,1.330162388482559,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_040,unknown
+adaptive,0.4714735252467187,1.282524664222593,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_041,unknown
+hindsight,0.46472141608647,1.3094890802843593,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_041,unknown
+voting,0.4714735252467187,1.282524664222593,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_041,unknown
+greedy,0.4714735252467187,1.282524664222593,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_041,unknown
+averaged_arc,0.4714735252467187,1.282524664222593,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_041,unknown
+minimax,0.4714735252467187,1.282524664222593,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_041,unknown
+optimistic,0.5809102096386451,1.315683926354252,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_041,unknown
+weighted,0.4714735252467187,1.282524664222593,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_041,unknown
+random,0.7322493374432766,3.0906337488696733,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_041,unknown
+adaptive,0.4714735252467187,1.6068643150814783,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_042,unknown
+hindsight,0.46472141608647,1.6010334872747063,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_042,unknown
+voting,0.4714735252467187,1.6068643150814783,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_042,unknown
+greedy,0.4714735252467187,1.6068643150814783,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_042,unknown
+averaged_arc,0.4714735252467187,1.6068643150814783,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_042,unknown
+minimax,0.4714735252467187,1.6068643150814783,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_042,unknown
+optimistic,0.5809102096386451,1.5556220675068029,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_042,unknown
+weighted,0.4714735252467187,1.6068643150814783,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_042,unknown
+random,0.7322493374432766,1.4869680127832463,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_042,unknown
+adaptive,0.4714735252467187,1.4988495293048922,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_043,unknown
+hindsight,0.46472141608647,1.584734355609151,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_043,unknown
+voting,0.4714735252467187,1.4988495293048922,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_043,unknown
+greedy,0.4714735252467187,1.4988495293048922,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_043,unknown
+averaged_arc,0.4714735252467187,1.4988495293048922,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_043,unknown
+minimax,0.4714735252467187,1.4988495293048922,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_043,unknown
+optimistic,0.5809102096386451,1.6989030070424365,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_043,unknown
+weighted,0.4714735252467187,1.4988495293048922,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_043,unknown
+random,0.7322493374432766,1.7808410159973378,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_043,unknown
+adaptive,0.4714735252467187,1.306778000148717,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_044,unknown
+hindsight,0.46472141608647,1.4091893009019214,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_044,unknown
+voting,0.4714735252467187,1.306778000148717,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_044,unknown
+greedy,0.4714735252467187,1.306778000148717,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_044,unknown
+averaged_arc,0.4714735252467187,1.306778000148717,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_044,unknown
+minimax,0.4714735252467187,1.306778000148717,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_044,unknown
+optimistic,0.5809102096386451,1.3136533791350056,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_044,unknown
+weighted,0.4714735252467187,1.306778000148717,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_044,unknown
+random,0.7322493374432766,1.2013139314039172,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_044,unknown
+adaptive,0.4714735252467187,1.1381257590317082,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_045,unknown
+hindsight,0.46472141608647,1.1880583976362786,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_045,unknown
+voting,0.4714735252467187,1.1381257590317082,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_045,unknown
+greedy,0.4714735252467187,1.1381257590317082,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_045,unknown
+averaged_arc,0.4714735252467187,1.1381257590317082,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_045,unknown
+minimax,0.4714735252467187,1.1381257590317082,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_045,unknown
+optimistic,0.5809102096386451,1.066554225687052,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_045,unknown
+weighted,0.4714735252467187,1.1381257590317082,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_045,unknown
+random,0.7322493374432766,1.4554902206105065,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_045,unknown
+adaptive,0.4714735252467187,2.1116318834406185,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_046,unknown
+hindsight,0.46472141608647,2.087522346488069,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_046,unknown
+voting,0.4714735252467187,2.1116318834406185,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_046,unknown
+greedy,0.4714735252467187,2.1116318834406185,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_046,unknown
+averaged_arc,0.4714735252467187,2.1116318834406185,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_046,unknown
+minimax,0.4714735252467187,2.1116318834406185,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_046,unknown
+optimistic,0.5809102096386451,1.997822793350272,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_046,unknown
+weighted,0.4714735252467187,2.1116318834406185,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_046,unknown
+random,0.7322493374432766,2.0047807390272485,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_046,unknown
+adaptive,0.4714735252467187,1.7888517506453412,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_047,unknown
+hindsight,0.46472141608647,1.7469941038981802,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_047,unknown
+voting,0.4714735252467187,1.7888517506453412,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_047,unknown
+greedy,0.4714735252467187,1.7888517506453412,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_047,unknown
+averaged_arc,0.4714735252467187,1.7888517506453412,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_047,unknown
+minimax,0.4714735252467187,1.7888517506453412,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_047,unknown
+optimistic,0.5809102096386451,1.4815912410516394,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_047,unknown
+weighted,0.4714735252467187,1.7888517506453412,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_047,unknown
+random,0.7322493374432766,1.5419940230774278,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_047,unknown
+adaptive,0.4714735252467187,1.839862594858607,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_048,unknown
+hindsight,0.46472141608647,1.8825372614489453,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_048,unknown
+voting,0.4714735252467187,1.839862594858607,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_048,unknown
+greedy,0.4714735252467187,1.839862594858607,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_048,unknown
+averaged_arc,0.4714735252467187,1.839862594858607,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_048,unknown
+minimax,0.4714735252467187,1.839862594858607,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_048,unknown
+optimistic,0.5809102096386451,1.6717509786963705,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_048,unknown
+weighted,0.4714735252467187,1.839862594858607,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_048,unknown
+random,0.7322493374432766,2.35278326265225,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_048,unknown
+adaptive,0.4714735252467187,1.3812574262767132,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_049,unknown
+hindsight,0.46472141608647,1.437230020392148,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_049,unknown
+voting,0.4714735252467187,1.3812574262767132,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_049,unknown
+greedy,0.4714735252467187,1.3812574262767132,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_049,unknown
+averaged_arc,0.4714735252467187,1.3812574262767132,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_049,unknown
+minimax,0.4714735252467187,1.3812574262767132,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_049,unknown
+optimistic,0.5809102096386451,1.3790514861127705,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_049,unknown
+weighted,0.4714735252467187,1.3812574262767132,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_049,unknown
+random,0.7322493374432766,1.134471675546889,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_049,unknown
+adaptive,0.4714735252467187,2.128461170173406,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_050,unknown
+hindsight,0.46472141608647,1.4541386730330097,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_050,unknown
+voting,0.4714735252467187,2.128461170173406,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_050,unknown
+greedy,0.4714735252467187,2.128461170173406,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_050,unknown
+averaged_arc,0.4714735252467187,2.128461170173406,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_050,unknown
+minimax,0.4714735252467187,2.128461170173406,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_050,unknown
+optimistic,0.5809102096386451,2.110006144822602,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_050,unknown
+weighted,0.4714735252467187,2.128461170173406,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_050,unknown
+random,0.7322493374432766,1.90989865933585,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_050,unknown
+adaptive,0.4714735252467187,0.5527392085068058,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_051,unknown
+hindsight,0.46472141608647,0.5408501928176479,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_051,unknown
+voting,0.4714735252467187,0.5527392085068058,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_051,unknown
+greedy,0.4714735252467187,0.5527392085068058,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_051,unknown
+averaged_arc,0.4714735252467187,0.5527392085068058,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_051,unknown
+minimax,0.4714735252467187,0.5527392085068058,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_051,unknown
+optimistic,0.5809102096386451,0.6585118289255542,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_051,unknown
+weighted,0.4714735252467187,0.5527392085068058,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_051,unknown
+random,0.7322493374432766,0.6214408478119905,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_051,unknown
+adaptive,0.4714735252467187,0.5164165938587968,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_052,unknown
+hindsight,0.46472141608647,0.51653725374332,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_052,unknown
+voting,0.4714735252467187,0.5164165938587968,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_052,unknown
+greedy,0.4714735252467187,0.5164165938587968,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_052,unknown
+averaged_arc,0.4714735252467187,0.5164165938587968,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_052,unknown
+minimax,0.4714735252467187,0.5164165938587968,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_052,unknown
+optimistic,0.5809102096386451,0.6526859535703052,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_052,unknown
+weighted,0.4714735252467187,0.5164165938587968,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_052,unknown
+random,0.7322493374432766,0.6917288305314037,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_052,unknown
+adaptive,0.4714735252467187,0.5367023746956067,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_053,unknown
+hindsight,0.46472141608647,0.5275995131085877,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_053,unknown
+voting,0.4714735252467187,0.5367023746956067,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_053,unknown
+greedy,0.4714735252467187,0.5367023746956067,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_053,unknown
+averaged_arc,0.4714735252467187,0.5367023746956067,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_053,unknown
+minimax,0.4714735252467187,0.5367023746956067,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_053,unknown
+optimistic,0.5809102096386451,0.7086297331323275,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_053,unknown
+weighted,0.4714735252467187,0.5367023746956067,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_053,unknown
+random,0.7322493374432766,0.6336671563122531,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_053,unknown
+adaptive,0.4714735252467187,0.748497690305458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_054,unknown
+hindsight,0.46472141608647,0.738302067184035,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_054,unknown
+voting,0.4714735252467187,0.748497690305458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_054,unknown
+greedy,0.4714735252467187,0.748497690305458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_054,unknown
+averaged_arc,0.4714735252467187,0.748497690305458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_054,unknown
+minimax,0.4714735252467187,0.748497690305458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_054,unknown
+optimistic,0.5809102096386451,0.988957284196477,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_054,unknown
+weighted,0.4714735252467187,0.748497690305458,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_054,unknown
+random,0.7322493374432766,1.2477970681397437,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_054,unknown
+adaptive,0.4714735252467187,0.895743053199567,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_055,unknown
+hindsight,0.46472141608647,0.8712980809879987,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_055,unknown
+voting,0.4714735252467187,0.895743053199567,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_055,unknown
+greedy,0.4714735252467187,0.895743053199567,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_055,unknown
+averaged_arc,0.4714735252467187,0.895743053199567,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_055,unknown
+minimax,0.4714735252467187,0.895743053199567,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_055,unknown
+optimistic,0.5809102096386451,0.9780556363493318,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_055,unknown
+weighted,0.4714735252467187,0.895743053199567,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_055,unknown
+random,0.7322493374432766,1.081200103126807,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_055,unknown
+adaptive,0.4714735252467187,0.5754113494492711,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_056,unknown
+hindsight,0.46472141608647,0.5473886960117996,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_056,unknown
+voting,0.4714735252467187,0.5754113494492711,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_056,unknown
+greedy,0.4714735252467187,0.5754113494492711,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_056,unknown
+averaged_arc,0.4714735252467187,0.5754113494492711,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_056,unknown
+minimax,0.4714735252467187,0.5754113494492711,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_056,unknown
+optimistic,0.5809102096386451,0.6899287294711732,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_056,unknown
+weighted,0.4714735252467187,0.5754113494492711,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_056,unknown
+random,0.7322493374432766,0.7497718504706751,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_056,unknown
+adaptive,0.4714735252467187,0.5883211162521728,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_057,unknown
+hindsight,0.46472141608647,0.5894777157242257,"['START', 'S0_N0', 'S1_N0', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0', 'END']",Benchmark_057,unknown
+voting,0.4714735252467187,0.5883211162521728,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_057,unknown
+greedy,0.4714735252467187,0.5883211162521728,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_057,unknown
+averaged_arc,0.4714735252467187,0.5883211162521728,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_057,unknown
+minimax,0.4714735252467187,0.5883211162521728,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_057,unknown
+optimistic,0.5809102096386451,0.7058252286778619,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N4', 'S5_N0']",Benchmark_057,unknown
+weighted,0.4714735252467187,0.5883211162521728,"['START', 'S0_N0', 'S1_N1', 'S2_N0', 'S3_N0', 'S4_N0', 'S5_N0']",Benchmark_057,unknown
+random,0.7322493374432766,0.8320446199376987,"['START', 'S0_N0', 'S1_N1', 'S2_N1', 'S3_N2', 'S4_N3', 'S5_N1']",Benchmark_057,unknown

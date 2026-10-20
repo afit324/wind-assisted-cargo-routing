@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/thomasfairweather/Documents/University/P4P/LeviCode/Part-4-Project---Wind-Assisted-Cargo-Vessels-main/benchmark_runner2.py", line 695, in main
+    summary = run_one_benchmark(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfairweather/Documents/University/P4P/LeviCode/Part-4-Project---Wind-Assisted-Cargo-Vessels-main/benchmark_runner2.py", line 525, in run_one_benchmark
+    forecast_results = experiments_gribs.run_experiments()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfairweather/Documents/University/P4P/LeviCode/Part-4-Project---Wind-Assisted-Cargo-Vessels-main/experiments_gribs.py", line 801, in run_experiments
+    r    = run_all_policies(seed)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfairweather/Documents/University/P4P/LeviCode/Part-4-Project---Wind-Assisted-Cargo-Vessels-main/experiments_gribs.py", line 762, in run_all_policies
+    h_path, h_cost, h_sc = compute_hindsight_optimal(forecast_snapshots, realised_sequence)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/thomasfairweather/Documents/University/P4P/LeviCode/Part-4-Project---Wind-Assisted-Cargo-Vessels-main/experiments_gribs.py", line 264, in compute_hindsight_optimal
+    cost = transition_cost + V[next_node]
+                             ~^^^^^^^^^^^
+KeyError: 'S7_N0'

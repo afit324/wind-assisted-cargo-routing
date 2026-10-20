@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wind-Assisted Routing Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+    .info.legend {
+      background: white;
+      padding: 10px;
+      font: 20px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+    .info.legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.8;
+    }
+    .custom-label {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+    }
+  </style>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <h2 style="text-align:center; font-family: Helvetica, Arial, sans-serif; margin: 15px 0;">
+          Constant vs Varying Power
+        </h2>
+  <div id="map" style="width: 100%; height: calc(100vh - 80px);"></div>
+
+  <script>
+    // Start coordinates
+    const startLat = 29.104177;
+    const startLong = -94.89558;
+    const endLat = 24.5;
+    const endLong = -81.0;
+
+    // // File for grid points
+    // const gridFile = '../Outputs/GridRichRISE0Fix3s.geojson'; // Grid points
+
+    // specify paths for routes
+    const pathsWithoutPower = {
+    // greatCircle: {
+    //     file: '../Outputs/great_circle_path.geojson',
+    //     color: '#FFA500',
+    //     legendLabel: 'Great Circle Path',
+    //     label: 'Great Circle',
+    //     labelOffset: +1.5
+    // }
+    };
+
+    const pathsWithPower = {
+    path1: {
+        file: '../Outputs/power_points_variable_1000kWpower_to_florida.geojson',
+        color: '#0000FF',
+        legendLabel: 'Varying Power (t = 2.85 Days, Energy = 69670 kWh)',
+        label: 'Varying Power',
+        labelOffset: -1.5,
+        radius: 4 
+    },
+    path2: {
+        file: '../Outputs/power_points_constant_1000kWpower_to_florida.geojson',
+        color: '#008000',
+        legendLabel: 'Constant 1000kW Power (t = 2.91 Days, Energy = 69834 kWh)',
+        label: 'Constant 1000kW',
+        labelOffset: +1.5,
+        radius: 2,
+    },
+    path3: {
+        file: '../Outputs/great_circle_path_constant_1000kWpower_to_florida.geojson',
+        color: '#ff69b4',
+        legendLabel: 'Great Circle 21000kW Power (t = 3.0 Days, Energy = 71931 kWh)',
+        label: 'Great Circle',
+        labelOffset: +1.5,
+        radius: 2,
+    }
+    }
+
+
+    function getColor(long, lat) {
+        if (long === startLong && lat === startLat) {
+          return '#00ff00' 
+        } // check for the end point with some tolerance
+        else if (Math.abs(long - endLong) < 0.1 && Math.abs(lat - endLat) < 0.1) {
+          return '#FF0000'; // red for the end point
+        } else {
+          return '#000000'; 
+        }
+    }
+
+    function getSize(long, lat) {
+        // make start and end points larger
+        if (long === startLong && lat === startLat) {
+            return 1.5; // larger size for start point
+        } else if (Math.abs(long - endLong) < 0.1 && Math.abs(lat - endLat) < 0.1) {
+            return 1.5; // larger size for end point
+        } else {
+            return 0.5; // smaller size for other points
+        }
+    }
+
+    // Initialize map
+    const map = L.map('map').setView([35, -40], 3.5);
+    // Create custom panes with explicit z-order
+    map.createPane('pathPane');
+    map.getPane('pathPane').style.zIndex = 400;
+
+    map.createPane('dotPane');
+    map.getPane('dotPane').style.zIndex = 500;
+
+
+    // Base map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // OpenSeaMap overlay
+    L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
+      attribution: '© OpenSeaMap contributors',
+      opacity: 0.7
+    }).addTo(map);
+
+    // Add start label
+    L.marker([startLat - 1, startLong], {
+      icon: L.divIcon({
+        className: 'custom-label',
+        // make the start label bright green
+        html: '<span style="color:black;">Start</span>',
+        iconSize: [60, 20],
+        iconAnchor: [30, 0]
+      })
+    }).addTo(map);
+
+    // Add end label
+    L.marker([endLat - 1, endLong], {
+      icon: L.divIcon({
+        className: 'custom-label',
+        html: '<span style="color:black;">End</span>',
+        iconSize: [60, 20],
+        iconAnchor: [30, 0]
+      })
+    }).addTo(map);
+
+      //   // Load GeoJSON as points ans colour the first and last points a different color
+      //   fetch(gridFile)
+      // .then(response => response.json())
+      // .then(data => { 
+      //   data.features.forEach(feature => {
+      //     const [lon, lat] = feature.geometry.coordinates;
+      //     const start = feature.properties.start_index;
+      //   const end = feature.properties.end_index;
+      //     L.circleMarker([lat, lon], {
+      //       radius: getSize(lon, lat),
+      //       color: getColor(lon, lat),
+      //       fillOpacity: 1
+      //     }).addTo(map);
+    
+      //   });
+      // });
+
+function addLabeledRoute(filePath, color, labelText, offsetLat = -0.5) {
+  fetch(filePath)
+    .then(res => res.json())
+    .then(data => {
+      const coords = data.features[0].geometry.coordinates;
+      const mid = Math.floor(coords.length / 2);
+      const [midLon, midLat] = coords[mid];
+
+      L.geoJSON(data, {
+        style: {
+          color: color,
+          weight: 2,
+          opacity: 0.8
+        }
+      }).addTo(map);
+
+      L.marker([midLat + offsetLat, midLon], {
+        icon: L.divIcon({
+          className: 'custom-label',
+          html: `<span style="color:${color};">${labelText}</span>`,
+          iconSize: [120, 20],
+          iconAnchor: [60, 0]
+        })
+      }).addTo(map);
+    });
+}
+
+// Power to color mapping
+function getColorPower(power) {
+  console.log(power)
+  return power >= 1600 ? '#d73027' :  // red
+         power >= 1000 ? '#fc8d59' :  // orange
+         power >= 400 ? '#fee08b' :  // yellow
+        //  power >= 200 ? '#91cf60' :  // light green
+                       '#4575b4';   // blue
+}
+
+// Function to add a path with colored points
+function addPowerPath(filePath, color, labelText, offsetLat = -0.5, radius) {
+  fetch(filePath)
+    .then(res => res.json())
+    .then(data => {
+      data.features.forEach((feature, i) => {
+        var coords = feature.geometry.coordinates;
+        const power = feature.properties.power; 
+        if (power == "path") {
+          const mid = Math.floor(coords.length / 2);
+          const [midLon, midLat] = coords[mid];
+          coords = feature.geometry.coordinates.map(([lon, lat]) => [lat, lon]);
+
+          L.polyline(coords, {
+          color: color,
+          weight: 2,
+          opacity: 0.8,
+          pane: 'pathPane'
+        }).addTo(map);
+
+          L.marker([midLat - offsetLat, midLon], {
+            icon: L.divIcon({
+              className: 'custom-label',
+              html: `<span style="color:${color};">${labelText}</span>`,
+              iconSize: [160, 20],
+              iconAnchor: [60, 0]
+            })
+          }).addTo(map);
+        } else {
+            const [lon, lat] = feature.geometry.coordinates;
+            L.circleMarker([lat, lon], {
+            radius: radius,
+            color: getColorPower(power),
+            fillColor: getColorPower(power),
+            fillOpacity: 0.9,
+            pane: 'dotPane'
+          },
+          
+        ).addTo(map);
+        }
+                  });
+    });
+}
+
+
+    Object.entries(pathsWithoutPower).forEach(([key, path]) => {
+    addLabeledRoute(path.file, path.color, path.label, path.labelOffset);
+    });
+
+    Object.entries(pathsWithPower).forEach(([key, path]) => {
+    addPowerPath(path.file, path.color, path.label, path.labelOffset, path.radius);
+    });
+
+  
+
+    // Add legend
+    const legend = L.control({ position: 'bottomright' });
+    legend.onAdd = function (map) {
+      const div = L.DomUtil.create('div', 'info legend');
+      div.innerHTML += '<hr><b>Paths</b><br>';
+        Object.entries(pathsWithoutPower).forEach(([key, path]) => {
+            div.innerHTML += `<i style="background:${path.color}"></i> ${path.legendLabel}<br>`;
+        });
+        Object.entries(pathsWithPower).forEach(([key, path]) => {
+            div.innerHTML += `<i style="background:${path.color}"></i> ${path.legendLabel}<br>`;
+        });
+        // Power point colors
+        div.innerHTML += '<hr><b>Power (kW)</b><br>';
+        const powerColors = [
+          // { color: '#4575b4', label: '0' },
+          // { color: '#91cf60', label: '200' },
+          { color: '#fee08b', label: '1400' },
+          { color: '#fc8d59', label: '2000' },
+          { color: '#d73027', label: '2600' }
+        ];
+        powerColors.forEach(pc => {
+          div.innerHTML += `<i style="background:${pc.color}"></i> ${pc.label}<br>`;
+        });
+      return div;
+    };
+    legend.addTo(map);
+  </script>
+</body>
+</html>
